@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="bg-slate-200 min-h-screen flex flex-col items-center p-6">
+    <div class="group w-full max-w-md bg-pink-300 rounded-md shadow-lg m-0 p-5">
+        <h1 class="text-center text-3xl font-bold mb-4 text-white">TODO LIST</h1>
+        <form id="task-form" class="flex gap-2 mb-6">
+            <input type="text" id="task-input" placeholder="digite sua tarefa" required
+                class="flex-grow p-2 text-md border-none rounded-md">
+            <button type="submit"
+                class="p-2 bg-pink-600 text-white border-none cursor-pointer rounded-lg hover:bg-pink-800 transition">Adicionar</button>
+        </form>
+        <ul class= "list-none p-0" id="task-list"></ul>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
